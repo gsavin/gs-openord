@@ -22,13 +22,13 @@ public class Demo {
 			gen.nextEvents();
 		gen.end();
 
-		OpenOrdLayout layout = new OpenOrdLayout();
-		layout.init(g);
-		layout.compute();
-
 		g.addAttribute("ui.quality");
 		g.addAttribute("ui.antialias");
 		g.display(false);
+
+		OpenOrdLayout layout = new OpenOrdLayout();
+		layout.init(g);
+		layout.compute();
 
 		Scanner s = new Scanner(System.in);
 		System.out.printf("<< press any key to exit main() >>\n");
